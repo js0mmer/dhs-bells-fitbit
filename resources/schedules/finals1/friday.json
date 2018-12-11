@@ -1,0 +1,19 @@
+{
+  "periods" : [
+    {
+      "start":"8:00",
+      "end":"10:00",
+      "name":"2nd Period"
+    },
+    {
+      "start":"10:00",
+      "end":"10:15",
+      "name":"Break"
+    },
+    {
+      "start":"10:20",
+      "end":"12:20",
+      "name":"1st Period"
+    }
+  ]
+}

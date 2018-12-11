@@ -1,0 +1,22 @@
+{
+  "fitbit": {
+    "appUUID": "513e9208-0566-4468-bda3-5cca8308a6af",
+    "appType": "app",
+    "appDisplayName": "DHS Bells",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#3f51b5",
+    "requestedPermissions": [],
+    "buildTargets": [
+      "higgs",
+      "meson"
+    ],
+    "i18n": {
+      "en": {
+        "name": "DHS Bells"
+      }
+    }
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "~1.0.0"
+  }
+}
