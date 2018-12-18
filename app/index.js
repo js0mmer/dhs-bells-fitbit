@@ -20,19 +20,27 @@ function init() {
       file = 'wednesday';
     }
     
-    // Finals
-    if(date.getMonth() == 4) {
-      if(date.getDate() == 25) {
-        file = 'finals/friday';
-      } else if(date.getDate() == 29) {
-        file = 'finals/tuesday';
-      } else if(date.getDate() == 30) {
-        file = 'finals/wednesday';
-      } else if(date.getDate() == 31) {
-        file = 'finals/thursday';
+     // Sem 1 Finals
+    if(date.getMonth() == 11) {
+      if(date.getDate() == 18) {
+        file = 'finals1/tuesday';
+      } else if(date.getDate() == 19) {
+        file = 'finals1/wednesday';
+      } else if(date.getDate() == 20) {
+        file = 'finals1/thursday';
+      } else if(date.getDate() == 21) {
+        file = 'finals1/friday';
       }
-    } else if (date.getMonth() == 10 && date.getDate() == 2) {
-      file = 'rally.json';
+    } else if(date.getMonth() == 4) { // Sem 2 Finals
+      if(date.getDate() == 25) {
+        file = 'finals2/friday';
+      } else if(date.getDate() == 29) {
+        file = 'finals2/tuesday';
+      } else if(date.getDate() == 30) {
+        file = 'finals2/wednesday';
+      } else if(date.getDate() == 31) {
+        file = 'finals2/thursday';
+      }
     }
     
     getPeriod(readFileSync("resources/schedules/" + file + ".json", "json"));
