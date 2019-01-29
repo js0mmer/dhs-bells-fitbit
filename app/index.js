@@ -41,8 +41,8 @@ function init() {
       } else if (date.getDate() === 31) {
         file = 'finals2/thursday';
       }
-    } else if (date.getMonth() === 0 && date.getDate() === 18) { // Assembly
-      file = 'assembly';
+    } else if (date.getMonth() === 0 && date.getDate() === 30) { // Preview Day
+      file = 'previewday';
     }
     
     getPeriod(readFileSync("resources/schedules/" + file + ".json", "json"));
