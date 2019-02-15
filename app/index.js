@@ -43,6 +43,8 @@ function init() {
       }
     } else if (date.getMonth() === 0 && date.getDate() === 30) { // Preview Day
       file = 'previewday';
+    } else if (date.getMonth() === 1 && date.getDate() === 15) { // Rally
+      file = 'rally';
     }
     
     getPeriod(readFileSync("resources/schedules/" + file + ".json", "json"));
